@@ -40,6 +40,6 @@ do
 done
 EOF
 #启动服务
-sudo launchctl load /Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist
+launchctl load -w /Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist
 
 echo -e "\033[32m [OK] \033[0m服务已启动，请尝试睡眠..."
